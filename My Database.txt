@@ -1,0 +1,25 @@
+My data base
+
+This is a small AirBnB database project that looks into home owners and visitors.
+it has four tables namely
+a users table
+a home table
+a reservations table
+and a users_homes table that helps join these tables
+
+the users table contains the names of the people
+their respective emails
+as well as their respctive ids
+
+the homes table contains;
+the addresses of the various homes
+the price point of these homes per night
+and finally there respective ids
+
+the reservations table contains
+the role of the user, i.e are they an owner or a visitor
+the start and end dates i.e When these particular individual started owning a home/visiting a home and when there visit or ownership will end.
+
+the users_homes table contains
+the user ids as well as the home ids.
+

@@ -1,0 +1,14 @@
+1. A join query which helps select the names of users who own homes
+SELECT name FROM users JOIN reservations ON reservations.id = users.id;
+
+2. A join query which helps us count the number of users who visit homes
+SELECT COUNT(*) FROM reservations JOIN users ON users.id = reservations.id WHERE reservations.role = "Visitor";
+
+3. A count querry that helps us count the total number of users.
+SELECT COUNT(name) FROM users;
+
+4. A concatenated query that helps us know which users own a house at the address "golden strt"
+ SELECT name FROM users WHERE id IN(SELECT home_id FROM users_homes WHERE user_id IN(SELECT id FROM homes WHERE address LIKE "%golden strt%"));
+
+ 5. A query selecting/listing all contents in the table users.
+  SELECT * FROM users;
